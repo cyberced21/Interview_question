@@ -11,6 +11,7 @@ def coordOverlap(x1,x2):
 
     I know this algorithm doesnt cover all of the cases, but it covers a good chunk of them so it satisfies me, for now that is.
 
+    I also implemented the if condition with parentheses for readability and priority of operation.
 
     >>> print(coordOverlap((5,6),(7,9))) #False
     False
