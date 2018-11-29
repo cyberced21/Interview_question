@@ -37,15 +37,20 @@ def versionCompare(vers1,vers2):
         if not chr.isnumeric():
             return "Error, not a standard version string."
 
-
+    # if the 2 strings are equal the version numbers are the same
     if vers1 == vers2:
         return vers1 + " is equal to " + vers2
 
-    if len(vers1_lst) == 1  and len(vers2_lst) == 1 and vers1_lst[0] == vers2_lst[0] and vers1_lst[1] == vers2_lst[1]:
+    # if there is only 1 number in the lists and they are equal
+    if len(vers1_lst) == 1  and len(vers2_lst) == 1 and vers1_lst[0] == vers2_lst[0]:
         return vers1 + " is equal to " + vers2
 
+        # if the first number of all possible version number is lesser than the second
     if vers1_lst[0] < vers2_lst[0]:
         return vers1+" is lesser than "+ vers2
+    # same thing but with greater than.
+    if vers1_lst[0] > vers2_lst[0]:
+        return vers1+" is greater than "+ vers2
 
 
 
